@@ -53,6 +53,11 @@ body{
         margin: 0 !important;
         padding:0 !important;
     }
+    .input-edicion{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
     i {
         padding: 8px;
