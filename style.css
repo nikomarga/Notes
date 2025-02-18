@@ -16,11 +16,10 @@ body{
 }
 
 @media (max-width: 480px) {
-
-   
     .contenedor {
-        padding: 20px;
+        max-width: 60% !important;
         min-height: auto;
+        padding: 0 !important;
     }
 
     h1 {
@@ -126,12 +125,13 @@ input{
 }
 
 .input-edicion {
+    color: rgba(9, 9, 9, 0.851);
     width: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 1px solid #404040;
+    border: 1px solid burlywood;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.739);
     outline: none;
 }
 
