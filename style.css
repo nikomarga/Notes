@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background: url(imagenes/pared.webp) no-repeat center center/ cover;
+}
+
+@media (max-width: 480px) {
+
+   
+    .contenedor {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+
+    }
+    input {
+        width: 100%; /* Abarca más espacio sin salirse del diseño */
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .tarea {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 18px;
+        min-height: auto;
+        padding: 7px !important;
+        margin: 0 !important;
+        justify-content: right !important;
+    }
+
+    .tarea p {
+        text-align: center !important;
+    }
+
+    .iconos {
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 !important;
+        padding:0 !important;
+    }
+
+    i {
+        padding: 8px;
+    }
+}
+
+
+.contenedor{
+    width: 600px;
+    max-width: 600px;
+    min-width: 350px;
+    min-height: 550px;
+    background-color: bisque;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.703);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.585);    
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.58);
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(212, 173, 125);
+}
+
+input{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+#lista-de-tareas{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+    min-height: 70px;
+    margin-top: 10px;
+    border-bottom: 2px solid burlywood;
+    word-wrap: break-word;
+}
+
+.tarea.completada{
+    text-decoration: line-through;
+    color: rgb(1, 1, 1);
+    background-color: rgba(255, 255, 255, 0.485);
+    border-radius: 7px;
+    border: none;
+}
+
+.input-edicion {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+}
+
+
+
+.tarea p{
+    flex-grow: 1; 
+    max-width: 250px;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+    padding-right: 10px;
+}
+
+.iconos {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+    min-width: 90px; 
+}
+i{
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icono-completar{
+    color: rgb(112, 185, 39);
+}
+
+.icono-eliminar{
+    color: rgb(58, 58, 58);
+}
+.icono-editar{
+    color: rgb(58, 58, 58);
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover{
+    background-color: rgba(169, 169, 169, 0.711);
+}
+
